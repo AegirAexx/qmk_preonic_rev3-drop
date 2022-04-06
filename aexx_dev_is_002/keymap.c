@@ -36,7 +36,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * |------+------+------+------+------+------|------+------+------+------+------+------|
     * | Home |   %  |   ~  |   &  |   *  |   (  |   )  |   <  |   ;  |  :   |   >  | End  |
     * |------+------+------+------+------+------+------+------+------+------+------+------|
-    * | Ctrl |  Os  | Alt  |      |      |    Space    | Mod  |      |      |      |      |
+    * | Ctrl |  Os  |      | Alt  |      |    Space    | Mod  |      |      |      |      |
     * `-----------------------------------------------------------------------------------'
     */
 
@@ -45,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_ESC, IS_EXLM, IS_AT, IS_HASH, IS_DLR, IS_LBRC, IS_RBRC, IS_CIRC, IS_SLSH, IS_BSLS, IS_PIPE, KC_PSCR,
         KC_DEL, IS_PLUS, IS_MINS, IS_UNDS, IS_EQL, IS_LCBR, IS_RCBR, IS_DQUO, IS_QUOT, IS_GRV, IS_QUES, KC_NO,
         KC_HOME, IS_PERC, IS_TILD, IS_AMPR, IS_ASTR, IS_LPRN, IS_RPRN, IS_LABK, IS_SCLN, IS_COLN, IS_RABK, KC_END,
-        KC_LCTL, KC_LGUI, KC_LALT, KC_NO, KC_TRNS, KC_SPC, MO(3), KC_NO, KC_NO, KC_NO, KC_NO
+        KC_LCTL, KC_LGUI, KC_NO, KC_LALT, KC_TRNS, KC_SPC, MO(3), KC_NO, KC_NO, KC_NO, KC_NO
     ),
 
 
@@ -59,7 +59,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * |------+------+------+------+------+------|------+------+------+------+------+------|
     * | Home |   %  |   ~  |   &  |   *  |   (  |   )  |   <  |   ;  |  :   |   >  | End  |
     * |------+------+------+------+------+------+------+------+------+------+------+------|
-    * | Ctrl |  Os  | Alt  |      |  Mod |    Space    |      |      |      |      |      |
+    * | Ctrl |  Os  |      |  Alt |  Mod |    Space    |      |      |      |      |      |
     * `-----------------------------------------------------------------------------------'
     */
 
@@ -68,13 +68,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_ESC, IS_EXLM, IS_AT, IS_HASH, IS_DLR, IS_LBRC, IS_RBRC, IS_CIRC, IS_SLSH, IS_BSLS, IS_PIPE, KC_PSCR,
         KC_DEL, IS_PLUS, IS_MINS, IS_UNDS, IS_EQL, IS_LCBR, IS_RCBR, IS_DQUO, IS_QUOT, IS_GRV, IS_QUES, KC_NO,
         KC_HOME, IS_PERC, IS_TILD, IS_AMPR, IS_ASTR, IS_LPRN, IS_RPRN, IS_LABK, IS_SCLN, IS_COLN, IS_RABK, KC_END,
-        KC_LCTL, KC_LGUI, KC_LALT, MO(3), KC_TRNS, KC_SPC, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO
+        KC_LCTL, KC_LGUI, KC_NO, KC_LALT, MO(3), KC_SPC, KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO
     ),
 
 
     /* Extra (Mod Left + Mod Right)
     * ,-----------------------------------------------------------------------------------.
-    * |BL Cy |BL TOG|BL BRT|BL ON |BL OFF|      |Mus On|MusOff|      |      | Reset| Debug|
+    * |      |      |      |      |      |      |      |      |      |      | Reset| Debug|
     * |------+------+------+------+------+------+------+------+------+------+------+------|
     * |      |      |Bri - |Bri + |      |      |      |      |Vol - |Vol + |      |      |
     * |------+------+------+------+------+-------------+------+------+------+------+------|
@@ -87,7 +87,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     */
 
 	[3] = LAYOUT_preonic_1x2uC(
-        BL_STEP, BL_TOGG, BL_BRTG, BL_ON, BL_OFF, KC_NO, MU_ON, MU_OFF, KC_NO, KC_NO, RESET, DEBUG,
+        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, MU_ON, MU_OFF, KC_NO, KC_NO, RESET, DEBUG,
         KC_NO, KC_NO, KC_BRID, KC_BRIU, KC_NO, KC_NO, KC_NO, KC_NO, KC_VOLD, KC_VOLU, KC_NO, KC_NO,
         KC_NO, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_NO,
         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
