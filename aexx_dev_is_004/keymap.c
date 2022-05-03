@@ -74,7 +74,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     /* Extra (Mod Left + Mod Right)
     * ,-----------------------------------------------------------------------------------.
-    * |      |      |      |      |      |      |      |      |      |      | Reset| Debug|
+    * |RGBTOG|      |      |      |      |      |      |      |      |      | Reset| Debug|
     * |------+------+------+------+------+------+------+------+------+------+------+------|
     * |      |      |Bri - |Bri + |      |      |      |      |Vol - |Vol + |      |      |
     * |------+------+------+------+------+-------------+------+------+------+------+------|
@@ -87,7 +87,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     */
 
 	[3] = LAYOUT_preonic_1x2uC(
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, MU_ON, MU_OFF, KC_NO, KC_NO, RESET, DEBUG,
+        RGB_TOG, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, MU_ON, MU_OFF, KC_NO, KC_NO, RESET, DEBUG,
         KC_NO, KC_NO, KC_BRID, KC_BRIU, KC_NO, KC_NO, KC_NO, KC_NO, KC_VOLD, KC_VOLU, KC_NO, KC_NO,
         KC_NO, KC_LCTL, KC_LGUI, KC_HOME, KC_END, KC_NO, KC_NO, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_NO,
         KC_NO, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_NO,
