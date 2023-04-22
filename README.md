@@ -8,7 +8,9 @@ I set it up with the idea of using at my day job as a programmer / developer.
 
 This is very much work in progress.
 
-Feel free to fork and improve it.
+I wrote up a short guide for me to reference when flashing a new layout. It's here, [guide.md](https://github.com/AegirAexx/qmk_preonic_rev3-drop/blob/master/guide.md).
+
+Feel free to fork and improve on it.
 
 Happy hacking!
 
