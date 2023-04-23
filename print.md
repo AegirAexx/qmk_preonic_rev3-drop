@@ -1,27 +1,5 @@
-# Preonic QMK Firmware
-
-## Description
-
-My version of the Preonic Rev3_DROP QMK firmware. It's a fork of the original QMK firmware, but with support for is-IS keyboard layout.
-
-I set it up with the idea of using at my day job as a programmer / developer.
-
-This is very much work in progress.
-
-I wrote up a short guide for me to reference when flashing a new layout. It's here, [guide.md](https://github.com/AegirAexx/qmk_preonic_rev3-drop/blob/master/guide.md).
-
-Printable cheat sheet. It's here, [print.md](https://github.com/AegirAexx/qmk_preonic_rev3-drop/blob/master/print.md).
-
-Feel free to fork and improve on it.
-
-Happy hacking!
-
-## Current Layout
-
-The current layout is in it's sixth iteration as of 23-04-2023.
-
 ```c
-    /* Qwerty Icelandic is-IS
+    /* Qwerty Icelandic is-IS, Preonic Rev3 Drop, Aexx_Dev_006.
     * ,-----------------------------------------------------------------------------------.
     * | Esc  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  |  Ö   |
     * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -33,23 +11,6 @@ The current layout is in it's sixth iteration as of 23-04-2023.
     * |------+------+------+------+------+------+------+------+------+------+------+------|
     * | Ctrl |  Os  | Alt  | Shift| Mod  |    Space    | Mod  | Left | Down |  Up  |Right |
     * `-----------------------------------------------------------------------------------'
-    */
-
-    /* Mod Left
-    * ,-----------------------------------------------------------------------------------.
-    * |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |  F7  |  F8  |  F9  | F10  | F11  |  F12 |
-    * |------+------+------+------+------+-------------+------+------+------+------+------|
-    * | Esc  |   !  |   @  |   #  |   $  |   [  |   ]  |   ^  |   /  |   \  |   |  | PrSc |
-    * |------+------+------+------+------+-------------+------+------+------+------+------|
-    * | Del  |   +  |   -  |   _  |   =  |   {  |   }  |   "  |   '  |   `  |   ?  |      |
-    * |------+------+------+------+------+------|------+------+------+------+------+------|
-    * | Home |   %  |   ~  |   &  |   *  |   (  |   )  |   <  |   ;  |  :   |   >  | End  |
-    * |------+------+------+------+------+------+------+------+------+------+------+------|
-    * | Ctrl |  Os  | Alt  | Shift|      |    Space    | Mod  |      | Ctrl | Alt  | Del  |
-    * `-----------------------------------------------------------------------------------'
-    */
-
-    /* Mod Right
     * ,-----------------------------------------------------------------------------------.
     * |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |  F7  |  F8  |  F9  | F10  | F11  |  F12 |
     * |------+------+------+------+------+-------------+------+------+------+------+------|
@@ -61,9 +22,6 @@ The current layout is in it's sixth iteration as of 23-04-2023.
     * |------+------+------+------+------+------+------+------+------+------+------+------|
     * | Ctrl |  Os  | Alt  | Shift|  Mod |    Space    |      |      | Ctrl | Alt  | Del  |
     * `-----------------------------------------------------------------------------------'
-    */
-
-    /* Extra (Mod Left + Mod Right)
     * ,-----------------------------------------------------------------------------------.
     * |RGBTOG|      |      |      |      |Vol - |Vol + |      |      |      | Debug| Reset|
     * |------+------+------+------+------+------+------+------+------+------+------+------|
